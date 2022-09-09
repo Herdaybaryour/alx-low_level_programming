@@ -3,8 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - Prints a random number and states whether
- * 	 it is positive, negative, or zero.
+ * main - Entry point
  *
  * Return: Always 0 (secess/correct)
 */
@@ -17,15 +16,15 @@ n = rand() - RAND-MAX / 2;
 
 if (n == 0)
 {
-	printf("%i is zero\n", n);
+printf("%i is zero\n", n);
 }
 else if (n < 0)
 {
-	printf("%i is negative\n", n);
+printf("%i is negative\n", n);
 }
 else
 {
-	printf("%i is positive\n", n);
+printf("%i is positive\n", n);
 }
 return (0);
 }
