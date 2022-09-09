@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
-* main - Prints the alphabet in lowercase, and then in uppercase
+* main - Entry point
 *
-* Return: Always 0 Sucess
+* Return: Always 0 (Sucess/correct)
 */
 int main(void)
 
@@ -24,4 +24,5 @@ putchar(upper_case);
 putchar('\n');
 
 return (0);
+
 }
