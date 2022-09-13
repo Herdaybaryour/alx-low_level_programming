@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * islower - function to print lower alphabet
+ * _islower - function to print lower alphabet
  *
- * Return:0 always
+ *@c:for the argument function
  */
 int _islower(int c)
 {
-	if (c >= 'a' && c >= 'z')
+	if (c >= 'a' && c <= 'z')
 	{
 		return (1);
 	}
