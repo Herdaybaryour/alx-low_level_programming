@@ -1,10 +1,37 @@
 #include "main.h"
 
+/**
+ * print_last_digit - prints the last digit of a number
+ * @n: n is an integer
+ * Description: prints the last digit of a number
+ * Return: integer
+ */
+
+int print_last_digit(int n)
+{
+int last = n % 10;
+if (n < 0)
+{
+last = last * -1;
+
+}
+_putchar(last + '0');
+return (last);
+
+}
+
+
+
+Jack_bauer
+
+#include "main.h"
+
  /**
   * jack_bauer - prints every minute of the day
+  * Description: prints every minute of the day
   * Return: void
   */
-void jack_bauer(void)
+void jack_bauer(void);
 {
 int hours_tens, hours_ones, minutes_tens, minutes_ones, hours_max;
 
