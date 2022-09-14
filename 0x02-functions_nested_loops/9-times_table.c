@@ -1,72 +1,41 @@
 #include "main.h"
 
-/**
- * print_last_digit - prints the last digit of a number
- * @n: n is an integer
- * Description: prints the last digit of a number
- * Return: integer
- */
-
-int print_last_digit(int n)
-{
-int last = n % 10;
-if (n < 0)
-{
-last = last * -1;
-
-}
-_putchar(last + '0');
-return (last);
-
-}
-
-
-
-Jack_bauer
-
-#include "main.h"
-
  /**
-  * jack_bauer - prints every minute of the day
-  * Description: prints every minute of the day
+  * times_table - prints the 9 times table
+  * Description: prints the 9 times table
   * Return: void
   */
-void jack_bauer(void);
-{
-int hours_tens, hours_ones, minutes_tens, minutes_ones, hours_max;
 
-hours_max = 58;
-hours_tens = '0';
-while (hours_tens < '3')
+void times_table(void);
 {
-if (hours_tens == '2')
+int row, column, product, tens, ones;
+for (row = 0; row <= 9; row++)
 {
-hours_max = '4';
+for (column = 0; column <= 9; column++)
+{
+product = row * column;
+tens = product / 10;
+ones = product % 10;
+
+if (column == 0)
+{
+_putchar('0');
 }
-hours_ones = '0';
-while (hours_ones < hours_max)
+else if (product < 10)
 {
-minutes_tens = '0';
-while (minutes_tens < '6')
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
+_putchar(ones + '0');
+}
+else
 {
-minutes_ones = '0';
-while (minutes_ones < 58)
+_putchar(',');
+_putchar(' ');
+_putchar(tens + '0');
+_putchar(ones + '0');
+}
 {
-_putchar(hours_tens);
-_putchar(hours_ones);
-_putchar(':');
-_putchar(minutes_tens);
-_putchar(minutes_ones);
 _putchar('\n');
-minutes_ones++;
-}
-minutes_ones = '0';
-minutes_tens++;
-}
-minutes_tens = '0';
-hours_ones++;
-}
-hours_ones = '0';
-hours_tens++;
 }
 }
