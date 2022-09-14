@@ -8,7 +8,7 @@
   */
 void print_times_table(int n)
 {
-int x, y, nz;
+int x, y, z;
 if (n >= 0 && n <= 14)
 {
 for (x = 0; x <= n; x++)
@@ -29,7 +29,7 @@ else if (z > 9)
 _putchar(',');
 _putchar(32);
 _putchar(32);
-_putchar(((z / 10) % 10)n + '0');
+_putchar(((z / 10) % 10)(n + '0');
 _putchar((z % 10) + '0');
 }
 else
