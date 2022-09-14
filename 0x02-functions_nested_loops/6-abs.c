@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main.h"
 
 /**
   * _abs - Entry point
@@ -6,7 +6,6 @@
   * Description: prints the absolute value of a integer
   * Return: int
   */
-
 int _abs(int n)
 {
 if (n > 0)
