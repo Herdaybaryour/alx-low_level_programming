@@ -1,21 +1,31 @@
 #include "main.h"
 
 /**
- * puts_half - prints the second half of the string
- * @str: the string reference
- * Return: 0
+ * _atoi - print reverse characters.
+ * @s: Array
+ * Return: Always 0.
  */
 
-void puts_half(char *str)
+int _atoi(char *s)
 {
-	int i;
+int i = 0, sign = 1;
+unsigned int num = 0;
 
-	for (i = 0; str[i] != '\0'; i++)
-		;
-	i++;
-	for (i /= 2; str[i] != '\0'; i++)
-	{
-		_putchar(str[i]);
-	}
-	_putchar('\n');
+while (s[i] != '\0')
+{
+if ((s[i] < '0' || s[i] > '9') && (s[i] == '-'))
+{
+sign = sign * -1;
+}
+else if ((s[i] >= '0' && s[i] <= '9'))
+{
+num = num * 10 + (s[i] - '0');
+if ((s[i + 1] < '0' || s[i + 1] > '9'))
+{
+break;
+}
+}
+i++;
+}
+return (num *sign);
 }
