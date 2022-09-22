@@ -7,7 +7,7 @@
  * @n: numbers of chars to be copied
  * Return: dest
  */
-char *_strncat(char *destm char *src, int n)
+char *_strncat (char *dest, char *src, int n)
 int i = 0, j = 0;
 while (*(dest + i) != '\0')
 i++;
