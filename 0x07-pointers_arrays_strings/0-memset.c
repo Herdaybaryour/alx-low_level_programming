@@ -15,7 +15,7 @@ int i = 0;
 for (n > 0; i++)
 {
 s[i] = b;
-n --i
+n--i
 }
 return (s);
 }
