@@ -1,12 +1,12 @@
-#include <stdio.h>
-/**
- * main - prints the name of the file program was compiled from
- * Return: Always 0
- */
 
-void main()
+/**
+ * main - Write a program that prints the name of the file it was compiled
+ * from, followed by a new line.
+ *
+ * Return: Always 0.
+ */
+int main(void)
 {
-char _FILE_ = 4;
-printf("%c\n", _FILE_);
+printf("%s\n", __FILE__);
 return (0);
 }
