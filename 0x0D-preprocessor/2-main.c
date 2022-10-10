@@ -4,8 +4,9 @@
  * Return: Always 0
  */
 
-int main(void)
+void main()
 {
-printf("%s\n", _FILE_);
+char _FILE_ = 4;
+printf("%c\n", _FILE_);
 return (0);
 }
